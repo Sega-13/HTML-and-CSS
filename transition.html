@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Learning transition </title>
+        <style>
+            .box{
+                width: 200px;
+                height: 200px;
+                background-color: hotpink;
+                transition-duration: 10s;
+                transition-property: transform;
+                transition-timing-function: ease;/*linear: transition effcet with same speed from start to end
+                                                   ease-in: starts with slow speed and increases at end
+                                                   ease-out: at end speed decreases*/
+            }
+            .box:hover{
+                background-color: greenyellow;
+                transform: rotate(45deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+    </body>
+</html>
