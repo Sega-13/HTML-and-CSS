@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Loops in JS </title>
+    </head>
+    <body>
+        <h1> Loops in JS </h1>
+        <p id="demo"></p>
+        <script>
+            let n;
+            document.write("The numbers are"+"<br>")
+            for(n=0; n<10; n++){
+                document.write(n+" ");
+            }
+        </script>
+        <script>
+            document.write("<br><br>")
+            let y= [2,4,6,8,10];
+            for(i=0, len= y.length, sum=0 ;i<len ; i++){
+                sum = sum+y[i];
+            }
+            document.write(len+"<br>");
+            document.write(sum)
+        </script>
+    </body>
+</html>
