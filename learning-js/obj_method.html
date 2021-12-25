@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Object Methods in JS </title>
+    </head>
+    <body>
+        <h1> Object Methods in JS  </h1>
+        <p id= demo></p>
+        <button id="click me">Click Me </button>
+        <script>
+            let student={
+                name: "sega",
+                age:24,
+            };
+            function sayHi(){
+                alert("Hello!")
+            }
+            student.message= sayHi;
+            document.getElementById("demo").innerHTML="Hi "+student.name;
+            document.getElementById("click me").onclick= student.message;
+        </script>
+    </body>
+</html>
