@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Functions in JS </title>
+    </head>
+    <body>
+        <h1>Functions in JS </h1>
+        <p id="demo"></p>
+        <script>
+            /* function using constructor*/
+            var example = new function("a", "b","return a+b")
+            var x = example(2,3);
+            document.getElementById("demo").innerHTML="The sum is =" + x
+        </script>
+        <script>
+             var y = function(a,b){return a+b}
+             x= y(8,2);
+            document.write(x);
+            document.getElementById("demo").innerHTML = x;
+        </script>
+    </body>
+</html>
