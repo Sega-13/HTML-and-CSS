@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Map, Filter,Reduce in JS </title>
+    </head>
+    <body>
+        <h1> Map in js </h1>
+        <p id ="demo"></p>
+    </body>
+    <script>
+        let num1 = [2,4,6,8,10]
+        let num2 = num1.map(multiply)
+        function multiply(values){
+            return values*2;
+        }
+        document.getElementById("demo").innerHTML= num2
+        let num3 = num1.filter(comp)
+        function comp(values){
+            return values>4
+        }
+        document.write(num3)
+        
+        let num4 = num1.reduce(sum)
+        function sum(total, value){
+            return total+value;
+        }
+        document.write("<br>"+num4)
+    </script>
+</html>
