@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Learning Functions JS </title>
+    </head>
+    <body>
+        <h1> Learning clousers </h1>
+        <p id="demo"></p>
+        <script>
+            var a =10;
+            function firstFun(){
+                var b = 20;
+                function secondFun(){
+                    var c= a+b;
+                    return c;
+                }
+                return secondFun();
+            }
+            var sum = firstFun();
+            document.write(sum);
+        </script>
+    </body>
+</html>
