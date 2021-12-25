@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Creating obj in JS </title>
+    </head>
+    <body>
+        <h1> Creating Objects in JS </h1>
+        <p id ="demo"></p>
+         <script>
+            /* using obj literals*/
+            var student={
+                name:"Sega",
+                age: 26,
+                subject:"Computer Science"
+            };
+            document.getElementById("demo").innerHTML=student.name+" of age "+ student.age+" studies "+student.subject;
+            
+            /*using new keyword*/
+            var student = new Object();
+            student.name="milind",
+            student.age = 26,
+            student.subject="Computer Science"
+            document.getElementById("demo").innerHTML=student.name+" of age "+ student.age+" studies "+student.subject;
+            
+          
+        </script>
+        <script>
+             /* using constructor*/
+            
+            function stud(name, age, subject){
+                this.name = name;
+                this.age = age;
+                this.subject = subject;
+            }
+            var student=new stud("sega", 26, "Computer Science");
+            
+            document.getElementById("demo").innerHTML=student.name+" of age "+ student.age+" studies "+student.subject;
+        </script>
+    </body>
+</html>
