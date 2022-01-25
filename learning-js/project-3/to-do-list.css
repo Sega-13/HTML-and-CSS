@@ -1,0 +1,30 @@
+.container{
+    display: block;
+    border: 2px solid black;
+}
+.style-header{
+    background-color: aqua;
+    font-size: 20px;
+    text-align: center;
+   font-family: cursive;
+    padding: 30px;
+}
+.to-dos{
+    margin-top: 25px;
+}
+.paragraph-styling{
+    margin: 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+.button-styling{
+    margin: 20px;
+    cursor: pointer;
+}
+.toDoStyle{
+    margin: auto;
+}
+.itemHeading{
+    text-align: center;
+    font-style: italic;
+}
