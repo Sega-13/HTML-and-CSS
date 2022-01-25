@@ -1,0 +1,27 @@
+.container{
+    width: 200px;
+    border: 2px solid black;
+    display: block;
+    margin: 200px 200px 200px 500px;
+}
+.table-design{
+    border: 1px solid black;
+}
+.title{
+    text-align: center;
+    margin-bottom: 10px;
+    width: 195px;
+    color: pink;
+    border: 2px solid hotpink;
+}
+input[type="button"]{
+    background-color: pink;
+    color:yellowgreen;
+    border: 2px solid hotpink;
+    width: 100%;
+}
+input[type= "text"]{
+    background-color: white;
+    width: 100%;
+    border: 2px solid hotpink;
+}
