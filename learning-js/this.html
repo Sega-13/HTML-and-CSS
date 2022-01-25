@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> "this" keyword in JS </title>
+    </head>
+    <body>
+        <h1> "this" keyword in JS</h1>
+        <p id ="demo"></p>
+        <!-- <script>
+             var value = 50;
+             function myFun(){
+                 var value = 100;
+                 alert(value);
+                 alert(this.value);// refers to global value.
+             }
+             myFun();
+        </script>-->
+        <script>
+            //using obj
+            const random={
+                name: "Tutorial",
+                video: ["JS","this","keyword"],
+                info(){
+                    this.video.forEach(function(tag){ 
+                        console.log(this.name, tag)
+                    },this)  //for-each takes two prop one is fun and other is obj
+                }
+            }
+            random.info();
+            
+        </script>
+    </body>
+</html>
